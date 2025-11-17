@@ -28,8 +28,9 @@ for(let i=0;i<lista.length;i++){
 
     const suma=sumarNotas(notas)
     const promedio=promediar(suma,notas)
+    const estado= promedio>70?"Aprobado":"Reprobado" 
 
-    console.log(`El estudiante ${nombreEstudiante} obtuvo un promedio de ${promedio}}`)
+    console.log(`El/La estudiante ${nombreEstudiante} obtuvo un promedio de ${promedio}, lo cual significa que el estudiante esta ${estado}`)
 
 }}
 
