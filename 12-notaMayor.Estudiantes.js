@@ -1,15 +1,23 @@
-const estudiantes=[{ nombre: "Ana", nota: 40 },
-{ nombre: "Pedro", nota: 10 },
-{ nombre: "Sergio", nota: 50 }]
+const estudiantes=[{ nombre: "Ana", nota: 69 },
+{ nombre: "Pedro", nota: 78 },
+{ nombre: "Sergio", nota: 80 }]
 
-for(let i=0;i<estudiantes.length;i++){
-    let notas=estudiantes[i].nota
-    let estudiante=estudiantes[i].nombre
-    let mayorNota=0;
 
-    if(mayorNota<notas) mayorNota=notas; break;
+function notaMayor(lista){
+let estudianteGanador="";
+let mayorNota=0;
+for(let i=0;i<lista.length;i++){
+    let notas=lista[i].nota
+    let estudiante=lista[i].nombre
+    
 
-    // console.log(`La mayor nota le pertenece a ${estudiante} siendo de ${notas} `)
-console.log(notas)
+    if(mayorNota<notas){
+        mayorNota=notas;
+        estudianteGanador=estudiante}
+
+
 
 }
+    return console.log(`La mayor nota le pertenece a ${estudianteGanador} siendo de ${mayorNota}`)}
+
+notaMayor(estudiantes)
